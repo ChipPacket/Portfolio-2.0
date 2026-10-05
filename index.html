@@ -24,18 +24,20 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body class="bg emerald-900">
-
     <!-- NAV -->
     <!-- 
         HEAVILY REFERENCED BY:
             - https://tailwindflex.com/@piet-vriend/responsive-navbar by Piet Vriend 
             - https://prebuiltui.com/components/navbar by PrebuiltUI
     -->
-    <header class="container bg-emerald-950 mx-auto px-4 py-3 border-b-amber-700 border-0 border-b-8 align-top justify-between">
+    <header class="container bg-gradient-to-b from-emerald-950 to-green-900 mx-auto px-4 py-3 border-b-amber-700 border-0 border-b-8 align-top justify-between">
         <!-- maybe set a slight transparency on scroll?-->
         <div class="flex flex-wrap items-center justify-between px-4 mx-auto">
             <div class="text-xl flex items-center text-white">
-                <i class="fa-solid fa-cat px-2 sm:px-1"></i>
+                <i class="fa-solid fa-cat px-2 sm:px-1" onclick="meow()"></i>
+                <span class="hidden text-white" id="textBubble">
+                    Meow!
+                </span>
                 <span>Layla Maksymuik</span>
             </div>
 
@@ -60,7 +62,7 @@
                 <a href="https://themesberg.com/product/tailwind-css/landing-page"
                 class="mx-auto text-white bg-amber-700 hover:bg-amber-800 rounded-lg text-sm px-4 sm:px-2 py-1 sm:mr-2 lg:mr-0">
                     <i class="fa-solid fa-download px-1"></i>
-                    <span class="mx-auto">getCV()</span>
+                    <span class="mx-auto">CV</span>
                 </a>
             </div>
 
@@ -71,21 +73,7 @@
                 </button>
             </div>
 
-            <!-- MOBILE NAV -->
-            <div id="mobileMenu" class="hidden md:hidden flex-col bg-emerald-950 text-white">
-                 <a href="#" class="block px-2 py-4 text-md text-white hover:text-amber-700">
-                    Home1
-                </a>
-                <a href="#" class="block px-2 py-4 text-md text-white hover:text-amber-700">
-                    Skills1
-                </a>
-                <a href="#" class="block px-2 py-4 text-md text-white hover:text-amber-700">
-                    Projects1
-                </a>
-                <a href="#" class="block px-2 py-4 text-md text-white hover:text-amber-700">
-                    Contact1
-                </a>
-            </div>
+
 
 
 
@@ -94,6 +82,26 @@
             
         </div>
     </header>
+
+    <!-- MOBILE NAV MENU -->
+    <div id="mobileMenu" class="hidden md:hidden flex-col bg-gradient-to-b from-emerald-950 to-green-900 text-white text-right">
+        <a href="#" class="block border-t-0 border-b-0 border-2 border-amber-700 px-1 py-2 text-md hover:text-amber-700">
+            Home
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#" class="block border-t-0 border-b-0 border-2 border-amber-700 px-1 py-2 text-md hover:text-amber-700">
+            Skills
+            <i class="fa-solid fa-keyboard"></i>
+        </a>
+        <a href="#" class="block border-t-0 border-b-0 border-2 border-amber-700 px-1 py-2 text-md hover:text-amber-700">
+            Projects
+            <i class="fa-solid fa-laptop-code"></i>
+        </a>
+        <a href="#" class="block rounded-b-lg border-t-0 border-2 border-b-3 border-amber-700 px-1 py-2 text-md hover:text-amber-700">
+            Contact
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
 
 </body>
 </html>
