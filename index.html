@@ -13,24 +13,22 @@
 
             USE GENERAL GUIDE FOR EXPLANATIONS / FIGURING THINGS OUT
             DOCS FOR SPECIFIC THINGS WHERE I KNOW WHAT IM DOING BUT I NEED SPECIFIC INFO 
-    
     -->
     <!--
         <script src="/scripts/tailwind-config.js"></script>
     -->
     <script src="https://kit.fontawesome.com/34e26a383d.js" crossorigin="anonymous"></script>
-    <script src="scripts/misc-code.js"></script>
     <link href="styles.css" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
-<body class="bg emerald-900">
+<body class="min-h-screen bg-stone-900">
     <!-- NAV -->
     <!-- 
         HEAVILY REFERENCED BY:
             - https://tailwindflex.com/@piet-vriend/responsive-navbar by Piet Vriend 
             - https://prebuiltui.com/components/navbar by PrebuiltUI
     -->
-    <header class="container bg-gradient-to-b from-emerald-950 to-green-900 mx-auto px-4 py-3 border-b-amber-700 border-0 border-b-8 align-top justify-between">
+    <header class="flex-auto bg-gradient-to-b from-emerald-950 to-green-900 mx-auto px-4 py-3 border-b-amber-700 border-0 border-b-8 align-top justify-between fixed-top">
         <!-- maybe set a slight transparency on scroll?-->
         <div class="flex flex-wrap items-center justify-between px-4 mx-auto">
             <div class="text-xl flex items-center text-white">
@@ -71,15 +69,7 @@
                 <button onclick="openMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-            </div>
-
-
-
-
-
-
-
-            
+            </div>      
         </div>
     </header>
 
@@ -103,5 +93,60 @@
         </a>
     </div>
 
+    <!-- SECTION 1 - INTRODUCTION -->
+    <div class="container text-left relative">
+        <!-- gotta change this img i think -->
+        <div class="object-cover w-full h-70 filter saturate brightness-120 blur-sm">
+            <img alt="" src="images/tayphoto.jpg">
+        </div>
+        <div class="w-full absolute top-0 left-0 text-center mt-10">
+            <!-- intro for me-->
+            <div>
+                <h1 class="text-4xl text-center">
+                    > Hi! I'm Layla Maksymuik
+                </h1>
+                <h3 class="text-2xl text-center">
+                    Aspiring Web / Software Developer, Current University Student
+                </h3>
+                <p>
+                    I am a third year Computer Science (User Experience and Design) student attending the University of Dundee,
+                    motivated by a strong passion for user experience, web development, and creative user engagement.
+                    Thank you for visiting my portfolio! :]
+                </p>
+                <p>Currently looking for both summer and year-long industry placements for 2027!</p>
+            </div>
+            <br>
+
+            <!-- social links n cv button-->
+            <div>
+                <a href="https://github.com/ChipPacket">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/layla-maksymuik/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <button class="bg-amber-700 text-white text-2xl">
+                    View My CV?
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2 - SKILLS -->
+    <!--
+    Format:
+        - Soft Skills + Hard(?) Skills in seperate lists
+        - Idk how you format this interestingly I gotta workshop this shit
+        - Maybe a little scroll list for each????????????????
+    
+    -->
+
+    <!-- SECTION 3 - PROJECTS -->
+
+    <!-- SECTION 4(?) - MORE DETAILED ABOUT ME ?-->
+
+    <!-- SECTION 4 - CONTACT -->
+
+<script src="scripts/misc-code.js"></script>
 </body>
 </html>
